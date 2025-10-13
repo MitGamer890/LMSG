@@ -2,6 +2,8 @@
 
 ¡Hola! Soy Andrés y actualmente estudio Desarrollo de Aplicaciones Multiplataforma (DAM).
 
+Este es el repositorio de Lenguaje de Marcas.
+
 ## Sobre mí
 
 - Apasionado por la tecnología y el desarrollo de software.
