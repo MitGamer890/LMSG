@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de registro - Mi web.</title>
+  </head>
+
+  <body>
+    <h1>Formulario de registro</h1>
+
+    <form action="procesa.php" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nom">Nombre:</label>
+        <input
+          type="text"
+          maxlength="50"
+          name="nombre"
+          id="nom"
+          required
+        /><br /><br />
+
+        <label for="ape">Apellidos:</label>
+        <input
+          type="text"
+          name="ape"
+          id="ape"
+          maxlength="50"
+          required
+        /><br /><br />
+
+        <label for="contraseña">Contraseña:</label>
+        <input
+          type="password"
+          name="contra"
+          id="contraseña"
+          maxlength="8"
+          required
+        />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" disabled /><br /><br />
+
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" id="hombre" value="hombre" checked />
+        <label for="hombre">hombre</label>
+        <input type="radio" name="sexo" id="mujer" value="mujer" />
+        <label for="mujer">mujer</label>
+      </fieldset>
+      <br />
+
+      <label for="correo">Correo:</label>
+      <input type="email" name="correo" id="correo" readonly /><br /><br />
+
+      <label for="pobla">Población:</label>
+      <select id="pobla" name="poblacion">
+        <option value="Alicante">Alicante</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Sevilla" selected>Sevilla</option>
+        <option value="Valencia">Valencia</option></select
+      ><br /><br />
+
+      <label for="desc">Descripción:</label><br />
+      <textarea name="descripción" id="desc" rows="4" cols="30"></textarea
+      ><br /><br />
+
+      <input type="checkbox" id="inf" name="información" checked />
+      <label for="inf"
+        >Deseo recibir información sobre novedades y ofertas</label
+      ><br />
+
+      <input type="checkbox" id="condi" name="condiciones" required />
+      <label for="condi"
+        >Declaro haber leído y aceptar las condiciones generales del programa y
+        la normativa sobre protección de datos</label
+      ><br /><br />
+
+      <label for="foto">Adjuntar foto:</label>
+      <input type="file" name="foto" id="foto" /><br /><br />
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar datos" />
+    </form>
+  </body>
+</html>
