@@ -6,7 +6,7 @@
 :root {
     --color-principal: #FF6B6B; /* Rosa/Rojo romántico */
     --color-secundario: #4ECDC4; /* Turquesa suave */
-    --color-fondo: #F7FFF7; /* Blanco roto */
+    --color-fondo: #FFCBDB; /* Blanco roto */
     --color-texto: #1A535C; /* Azul oscuro legible */
     --sombra-suave: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
