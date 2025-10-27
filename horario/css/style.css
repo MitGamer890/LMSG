@@ -1,0 +1,13 @@
+table,th,td {border: 3px solid rgb(0, 0, 0); border-collapse: collapse;background-color: rgb(190, 190, 190);}
+.prog {background-color: rgb(255, 79, 79); color: rgb(255, 255, 255);text-align: center; font-weight: bold ; font-size: large;}
+#recreo {background-color: rgb(184, 184, 255); color: black; text-align: center;font-weight:bold; text-transform: uppercase; font-size: 150%;}
+.base {background-color: bisque; color: black; text-align: center; font-weight: bold;}
+.sistemas {background-color: cornflowerblue; color: white;text-align: center;font-weight: bold;}
+.lenguaje {background-color: rgb(133, 255, 133);color: rgb(0, 0, 0); text-align: center;font-weight: bold;}
+.digi {background-color:azure ;color: black;text-align: center;font-weight: bold;}
+.entornos {background-color: rgb(92, 80, 255);color: white;font-weight: bold;text-align: center;}
+.ingles {background-color: rgb(197, 135, 255);text-align: center;font-weight: bold;color: black;}
+.ipe {background-color: rgb(163, 255, 224);font-weight: bold;text-align: center; color: black;}
+.sostenibilidad {background-color: rgb(195, 255, 139);color: black;font-weight: bold;text-align: center;}
+.proyecto {background-color: white;color: black;text-align: center;font-weight: bold;}
+:scope {size: 25cap;}
