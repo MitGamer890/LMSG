@@ -12,4 +12,4 @@ table,th,td {border: 3px solid rgb(0, 0, 0); border-collapse: collapse;backgroun
 .proyecto {background-color: white;color: black;text-align: center;font-weight: bold;}
 .horario {margin:5%;display: flex;justify-content: center; align-items:center ;}
 caption {text-align: left;caption-side: bottom ;font-weight: bold;font-size:120%;}
-.prog:hover {cursor: url('/horario/images/warning.png') 16 16, auto;}
+.prog:hover {cursor: url('/images/warning.png') 16 16, auto;}
