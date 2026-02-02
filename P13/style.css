@@ -39,6 +39,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    background-color: var(--blanco);
+    width: 100%;
+    padding: 1.5rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.625rem;
+
 }
 /*Le he 5 porque creo que queda bien */
 .logo {
@@ -50,15 +56,21 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0;
+    background-color: var(--verde);
+    width: 100%;
+    padding: 1.5rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.625rem;
 }
+
 /*Cada opcion con su estilo*/
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--blanco);
 }
 /*Pongo que al pasar por encima cambie al rosa el menu*/
 nav a:hover {
-    color: var(--verde);
+    color: purple;
 }
 /*El main-container como indicas*/
 .main-container {
@@ -89,6 +101,9 @@ nav a:hover {
     border-radius: 1rem;
     width: fit-content;
     font-size: 0.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+    margin-top: 1rem;
 }
 /*La retroalimentacion como se indica con su ancho y fuente que es una variable*/
 .feedback {
