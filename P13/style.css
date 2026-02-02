@@ -3,8 +3,8 @@
 :root {
     --primary-font: 'Poppins', sans-serif;
     --bg-color: #f0f0f0;
-    --white: #ffffff;
-    --pink: #6B9222;
+    --blanco: #ffffff;
+    --verde: #6B9222;
     --text-size: 0.75rem;
 }
 /*Todo con 0 de margen y padding y border-box*/
@@ -58,7 +58,7 @@ nav a {
 }
 /*Pongo que al pasar por encima cambie al rosa el menu*/
 nav a:hover {
-    color: var(--pink);
+    color: var(--verde);
 }
 /*El main-container como indicas*/
 .main-container {
@@ -73,7 +73,7 @@ nav a:hover {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--blanco);
     border-radius: 0.625rem;
     padding: 1.25rem;
     border: 0.0625rem solid #ddd;
@@ -84,7 +84,7 @@ nav a:hover {
 }
 /*La etiqueta pequeña rosa, que describe nuestros producstos*/
 .card_label {
-    background-color: var(--pink);
+    background-color: var(--verde);
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     width: fit-content;
