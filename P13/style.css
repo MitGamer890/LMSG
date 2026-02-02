@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --bg-color: #f0f0f0;
+    --white: #ffffff;
+    --pink: #6B9222;
+    --text-size: 0.75rem;
+}
+/*Todo con 0 de margen y padding y border-box*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*La parte del body que indicas que hagamos*/
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Su header*/
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/*El titulo con su imagen al lado, los he metido en un div para ponerles flex y dejarlos asi*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+/*Le he 5 porque creo que queda bien */
+.logo {
+    max-width: 9.5rem;
+}
+/*Menu colocado como se pide*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+/*Cada opcion con su estilo*/
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+/*Pongo que al pasar por encima cambie al rosa el menu*/
+nav a:hover {
+    color: var(--pink);
+}
+/*El main-container como indicas*/
+.main-container {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 87.5rem;
+    width: 100%;
+    margin: 0 auto;
+    grid-auto-rows: 1fr;
+}
+/*Las tarjetas con flex y columnas*/
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    border: 0.0625rem solid #ddd;
+}
+/*El contenido de las tarjetas, es decir, el texto*/
+.card-content {
+    flex-grow: 1;
+}
+/*La etiqueta pequeña rosa, que describe nuestros producstos*/
+.card_label {
+    background-color: var(--pink);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    font-size: 0.8rem;
+}
+/*La retroalimentacion como se indica con su ancho y fuente que es una variable*/
+.feedback {
+    margin-top: 2rem;
+    width: 18.75rem;
+    text-align: center;
+    font-size: var(--text-size);
+}
+/*La caja especifica donde estan las opciones de retroalimentacion*/
+.feedback-box {
+    display: flex;
+    border: 1px solid #000;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+/*Decoracion de las opciones*/
+.mal, .bien {
+    flex: 1;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: flex 0.3s ease;
+}
+
+.mal { background-color: #00ff80; }
+
+.bien { background-color: #cd0000; }
+
+/*Dependiendo si te pones sobre bien o sobre mal, se pone 3 veces mayor donde este el cursor, nunca vas a estar con los dos a la vez*/
+.mal:hover, .bien:hover {
+    flex: 3;
+}
+/*Las querys con sus tamaños*/
+@media (max-width: 600px) {
+    /*En la primera pongo una columna y tambien cambio el meno a columna centrada*/
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Pongo dos columna de igual tamaño*/
+@media (min-width: 601px) and (max-width: 900px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*Al ser 4 uso un repeat y las pongo de igual tamaño*/
+@media (min-width: 901px) {
+    .main-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
